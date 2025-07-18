@@ -1,0 +1,133 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-18 15:52:18.785130",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "section_break_gm4v",
+  "amended_from",
+  "consultation",
+  "fit_and_back_to_work",
+  "column_break_cpau",
+  "unfit_to_workreferred_to_hse",
+  "medevac",
+  "fatality",
+  "section_break_ecya",
+  "training_drill",
+  "inspection_section",
+  "table_dfbm",
+  "section_break_mdsf",
+  "customer_complaints",
+  "others"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_gm4v",
+   "fieldtype": "Section Break",
+   "label": " CONSULTATION"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Site daily report",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "consultation",
+   "fieldtype": "Int",
+   "label": "Consultation"
+  },
+  {
+   "fieldname": "fit_and_back_to_work",
+   "fieldtype": "Int",
+   "label": "Fit and back to work"
+  },
+  {
+   "fieldname": "column_break_cpau",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "unfit_to_workreferred_to_hse",
+   "fieldtype": "Int",
+   "label": "Unfit to work(Referred to HSE)"
+  },
+  {
+   "fieldname": "medevac",
+   "fieldtype": "Int",
+   "label": "Medevac"
+  },
+  {
+   "fieldname": "fatality",
+   "fieldtype": "Int",
+   "label": "Fatality"
+  },
+  {
+   "fieldname": "section_break_ecya",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "training_drill",
+   "fieldtype": "Table",
+   "label": "TRAINING /DRILL",
+   "options": "Training"
+  },
+  {
+   "fieldname": "inspection_section",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "table_dfbm",
+   "fieldtype": "Table",
+   "label": "INSPECTION",
+   "options": "Inspection"
+  },
+  {
+   "fieldname": "section_break_mdsf",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "customer_complaints",
+   "fieldtype": "Table",
+   "label": "CUSTOMER COMPLAINTS",
+   "options": "Customer complaints"
+  },
+  {
+   "fieldname": "others",
+   "fieldtype": "Text Editor",
+   "label": "OTHERS"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2025-07-18 18:17:10.928567",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Site daily report",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "submit": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

@@ -1,0 +1,58 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-18 16:43:42.157054",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "no",
+  "topic",
+  "attendees",
+  "duration",
+  "done_by"
+ ],
+ "fields": [
+  {
+   "fieldname": "no",
+   "fieldtype": "Data",
+   "label": "No"
+  },
+  {
+   "fieldname": "topic",
+   "fieldtype": "Link",
+   "label": "Topic",
+   "options": "Training Topic"
+  },
+  {
+   "fieldname": "attendees",
+   "fieldtype": "Int",
+   "label": "Attendees"
+  },
+  {
+   "fieldname": "duration",
+   "fieldtype": "Duration",
+   "label": "Duration",
+   "placeholder": "In minutes"
+  },
+  {
+   "fieldname": "done_by",
+   "fieldtype": "Data",
+   "label": "Done by"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-18 17:37:17.239917",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Training",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}

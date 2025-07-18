@@ -1,0 +1,43 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2025-07-18 17:38:22.550867",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "inspection_activity",
+  "column_break_ofgc",
+  "remarks"
+ ],
+ "fields": [
+  {
+   "fieldname": "inspection_activity",
+   "fieldtype": "Data",
+   "label": "Inspection activity"
+  },
+  {
+   "fieldname": "column_break_ofgc",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "remarks",
+   "fieldtype": "Data",
+   "label": "Remarks"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2025-07-18 17:39:16.612560",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Inspection",
+ "owner": "Administrator",
+ "permissions": [],
+ "row_format": "Dynamic",
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": []
+}
