@@ -5,6 +5,11 @@
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "site_details_section",
+  "site_name",
+  "ambulance_licence_plate",
+  "date",
+  "team_on_site",
   "section_break_gm4v",
   "amended_from",
   "consultation",
@@ -100,13 +105,43 @@
    "fieldname": "others",
    "fieldtype": "Text Editor",
    "label": "OTHERS"
+  },
+  {
+   "fieldname": "site_details_section",
+   "fieldtype": "Section Break",
+   "label": "SITE DETAILS"
+  },
+  {
+   "fieldname": "team_on_site",
+   "fieldtype": "Table",
+   "label": "Team on site",
+   "options": "Site personnel"
+  },
+  {
+   "fieldname": "ambulance_licence_plate",
+   "fieldtype": "Data",
+   "label": "Ambulance licence plate",
+   "placeholder": "T 123 ABC"
+  },
+  {
+   "fieldname": "site_name",
+   "fieldtype": "Data",
+   "label": "Site Name"
+  },
+  {
+   "fieldname": "date",
+   "fieldtype": "Date",
+   "in_list_view": 1,
+   "label": "Date",
+   "read_only": 1,
+   "reqd": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-07-18 18:17:10.928567",
+ "modified": "2025-07-18 19:46:25.792729",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Site daily report",
