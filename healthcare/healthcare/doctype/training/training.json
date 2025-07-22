@@ -16,28 +16,33 @@
   {
    "fieldname": "no",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "No"
   },
   {
    "fieldname": "topic",
    "fieldtype": "Link",
+   "in_list_view": 1,
    "label": "Topic",
    "options": "Training Topic"
   },
   {
    "fieldname": "attendees",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Attendees"
   },
   {
    "fieldname": "duration",
    "fieldtype": "Duration",
+   "in_list_view": 1,
    "label": "Duration",
    "placeholder": "In minutes"
   },
   {
    "fieldname": "done_by",
    "fieldtype": "Data",
+   "in_list_view": 1,
    "label": "Done by"
   }
  ],
@@ -45,7 +50,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-18 17:37:17.239917",
+ "modified": "2025-07-22 13:13:07.280160",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Training",
