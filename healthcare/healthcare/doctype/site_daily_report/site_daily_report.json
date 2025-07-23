@@ -1,6 +1,7 @@
 {
  "actions": [],
  "allow_rename": 1,
+ "autoname": "format:SDR-{####}",
  "creation": "2025-07-18 15:52:18.785130",
  "doctype": "DocType",
  "engine": "InnoDB",
@@ -149,6 +150,7 @@
    "default": "0",
    "fieldname": "total_consultation",
    "fieldtype": "Int",
+   "in_list_view": 1,
    "label": "Total Consultation",
    "non_negative": 1,
    "read_only": 1
@@ -158,10 +160,11 @@
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-07-23 11:51:21.415082",
+ "modified": "2025-07-23 12:58:12.863939",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Site daily report",
+ "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [
   {
