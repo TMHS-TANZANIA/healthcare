@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class SitePersonnel(Document):
+class SitePersonnelRow(Document):
 	pass

@@ -6,18 +6,18 @@
  "engine": "InnoDB",
  "field_order": [
   "site_details_section",
+  "amended_from",
   "site_name",
   "ambulance_licence_plate",
   "date",
   "team_on_site",
   "section_break_gm4v",
-  "amended_from",
-  "consultation",
-  "fit_and_back_to_work",
-  "column_break_cpau",
-  "unfit_to_workreferred_to_hse",
+  "fitted_and_back_to_work",
+  "not_fit_hse",
   "medevac",
+  "column_break_cpau",
   "fatality",
+  "total_consultation",
   "section_break_ecya",
   "training_drill",
   "inspection_section",
@@ -43,33 +43,22 @@
    "search_index": 1
   },
   {
-   "fieldname": "consultation",
-   "fieldtype": "Int",
-   "label": "Consultation"
-  },
-  {
-   "fieldname": "fit_and_back_to_work",
-   "fieldtype": "Int",
-   "label": "Fit and back to work"
-  },
-  {
    "fieldname": "column_break_cpau",
    "fieldtype": "Column Break"
   },
   {
-   "fieldname": "unfit_to_workreferred_to_hse",
-   "fieldtype": "Int",
-   "label": "Unfit to work(Referred to HSE)"
-  },
-  {
    "fieldname": "medevac",
    "fieldtype": "Int",
-   "label": "Medevac"
+   "label": "Medevac",
+   "non_negative": 1,
+   "reqd": 1
   },
   {
    "fieldname": "fatality",
    "fieldtype": "Int",
-   "label": "Fatality"
+   "label": "Fatality",
+   "non_negative": 1,
+   "reqd": 1
   },
   {
    "fieldname": "section_break_ecya",
@@ -79,7 +68,8 @@
    "fieldname": "training_drill",
    "fieldtype": "Table",
    "label": "TRAINING /DRILL",
-   "options": "Training"
+   "options": "Training",
+   "reqd": 1
   },
   {
    "fieldname": "inspection_section",
@@ -104,7 +94,7 @@
   {
    "fieldname": "others",
    "fieldtype": "Text Editor",
-   "label": "OTHERS"
+   "label": "Other Activities/Comments"
   },
   {
    "fieldname": "site_details_section",
@@ -115,7 +105,8 @@
    "fieldname": "team_on_site",
    "fieldtype": "Table",
    "label": "Team on site",
-   "options": "Site personnel"
+   "options": "Site Personnel Row",
+   "reqd": 1
   },
   {
    "fieldname": "ambulance_licence_plate",
@@ -125,23 +116,49 @@
   },
   {
    "fieldname": "site_name",
-   "fieldtype": "Data",
-   "label": "Site Name"
+   "fieldtype": "Link",
+   "label": "Site Name",
+   "options": "Site",
+   "reqd": 1
   },
   {
+   "default": "Today",
    "fieldname": "date",
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Date",
    "read_only": 1,
    "reqd": 1
+  },
+  {
+   "fieldname": "fitted_and_back_to_work",
+   "fieldtype": "Int",
+   "label": "Fit and back to work",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "fieldname": "not_fit_hse",
+   "fieldtype": "Int",
+   "label": "Unfit to work(Referred to HSE)",
+   "non_negative": 1,
+   "reqd": 1
+  },
+  {
+   "bold": 1,
+   "default": "0",
+   "fieldname": "total_consultation",
+   "fieldtype": "Int",
+   "label": "Total Consultation",
+   "non_negative": 1,
+   "read_only": 1
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-07-22 13:16:45.717165",
+ "modified": "2025-07-23 11:51:21.415082",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Site daily report",
