@@ -24,7 +24,7 @@ def aggregate_site_weekly_report(site, week_start, week_end):
             "site_name": site,
             "date": ["between", [week_start, week_end]]
         },
-        fields=["name", "total_consultation", "medevac", "fatality", "fitted_and_back_to_work", "not_fit_hse"],
+        fields=["name", "total_consultation", "medevac", "fatality", "fitted_and_back_to_work", "not_fit_hse", "others"],
     )
     if not daily_reports:
         return None
@@ -34,22 +34,28 @@ def aggregate_site_weekly_report(site, week_start, week_end):
     total_fatality = sum(d["fatality"] for d in daily_reports)
     total_fit_and_back_to_work = sum(d["fitted_and_back_to_work"] for d in daily_reports)
     total_not_fit_hse = sum(d["not_fit_hse"] for d in daily_reports)
-
-    # Aggregate child tables
+    # Aggregate comments
+    other_activities = "\n".join([d["others"] for d in daily_reports if d.get("others")])
+    # Aggregate child tables using correct fieldnames
     training_drill = []
     inspection = []
     customer_complaints = []
-    team_on_site = []
     for d in daily_reports:
-        doc = frappe.get_doc("Site daily report", d["name"])
-        training_drill.extend([row.as_dict() for row in doc.training_drill])
-        if hasattr(doc, "table_dfbm"):
-            inspection.extend([row.as_dict() for row in doc.table_dfbm])
-        if hasattr(doc, "customer_complaints"):
-            customer_complaints.extend([row.as_dict() for row in doc.customer_complaints])
-        if hasattr(doc, "team_on_site"):
-            team_on_site.extend([row.as_dict() for row in doc.team_on_site])
-
+        training_drill.extend(frappe.get_all(
+            "Training",
+            filters={"parent": d["name"], "parenttype": "Site daily report"},
+            fields=["*"],
+        ))
+        inspection.extend(frappe.get_all(
+            "Inspection",
+            filters={"parent": d["name"], "parentfield": "table_dfbm", "parenttype": "Site daily report"},
+            fields=["*"],
+        ))
+        customer_complaints.extend(frappe.get_all(
+            "Customer complaints",
+            filters={"parent": d["name"], "parenttype": "Site daily report"},
+            fields=["*"],
+        ))
     return {
         "site": site,
         "week_start_date": week_start,
@@ -62,7 +68,7 @@ def aggregate_site_weekly_report(site, week_start, week_end):
         "training_drill": training_drill,
         "inspection": inspection,
         "customer_complaints": customer_complaints,
-        "team_on_site": team_on_site,
+        "other_activities": other_activities,
     }
 
 def generate_weekly_reports():
@@ -101,3 +107,34 @@ def generate_weekly_report_for_site_and_date(site, date):
         doc = frappe.get_doc({"doctype": "Site Weekly Report", **data})
         doc.insert(ignore_permissions=True)
         return doc.name 
+
+@frappe.whitelist()
+def generate_weekly_reports_for_today():
+    today = frappe.utils.getdate()
+    # Find last Friday (week start)
+    weekday = today.weekday()
+    days_since_friday = (weekday - 4) % 7
+    if days_since_friday == 0:
+        # Today is Friday, so go back 7 days for last Friday
+        week_start = today - timedelta(days=7)
+    else:
+        week_start = today - timedelta(days=days_since_friday)
+    week_end = week_start + timedelta(days=6)
+    sites = frappe.get_all("Site", pluck="name")
+    for site in sites:
+        data = aggregate_site_weekly_report(site, week_start, week_end)
+        if not data:
+            continue
+        existing = frappe.db.exists("Site Weekly Report", {
+            "site": site,
+            "week_start_date": week_start,
+            "week_end_date": week_end
+        })
+        if existing:
+            doc = frappe.get_doc("Site Weekly Report", existing)
+            for k, v in data.items():
+                doc.set(k, v)
+            doc.save(ignore_permissions=True)
+        else:
+            doc = frappe.get_doc({"doctype": "Site Weekly Report", **data})
+            doc.insert(ignore_permissions=True) 
