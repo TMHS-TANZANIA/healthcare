@@ -152,6 +152,11 @@ scheduler_events = {
 		"healthcare.healthcare.doctype.fee_validity.fee_validity.update_validity_status",
 		"healthcare.healthcare.doctype.inpatient_record.inpatient_record.add_occupied_service_unit_in_ip_to_billables",
 	],
+	"cron": {
+		"0 6 * * 5": [  # Every Friday at 6am
+			"healthcare.healthcare.doctype.site_weekly_report.site_weekly_report.generate_weekly_reports"
+		]
+	}
 }
 
 # Scheduled Tasks

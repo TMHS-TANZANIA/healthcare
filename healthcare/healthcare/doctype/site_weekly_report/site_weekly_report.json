@@ -1,0 +1,28 @@
+{
+ "doctype": "DocType",
+ "name": "Site Weekly Report",
+ "module": "Healthcare",
+ "autoname": "format:SWR-{####}",
+ "fields": [
+  {"fieldname": "site", "fieldtype": "Link", "label": "Site", "options": "Site", "reqd": 1},
+  {"fieldname": "week_start_date", "fieldtype": "Date", "label": "Week Start Date", "reqd": 1},
+  {"fieldname": "week_end_date", "fieldtype": "Date", "label": "Week End Date", "reqd": 1},
+  {"fieldname": "total_consultation", "fieldtype": "Int", "label": "Total Consultation", "read_only": 1},
+  {"fieldname": "total_medevac", "fieldtype": "Int", "label": "Total Medevac", "read_only": 1},
+  {"fieldname": "total_fatality", "fieldtype": "Int", "label": "Total Fatality", "read_only": 1},
+  {"fieldname": "total_fit_and_back_to_work", "fieldtype": "Int", "label": "Total Fit and Back to Work", "read_only": 1},
+  {"fieldname": "total_not_fit_hse", "fieldtype": "Int", "label": "Total Unfit to Work (HSE)", "read_only": 1},
+  {"fieldname": "training_drill", "fieldtype": "Table", "label": "Training/Drill (All Week)", "options": "Training"},
+  {"fieldname": "inspection", "fieldtype": "Table", "label": "Inspection (All Week)", "options": "Inspection"},
+  {"fieldname": "customer_complaints", "fieldtype": "Table", "label": "Customer Complaints (All Week)", "options": "Customer complaints"},
+  {"fieldname": "other_activities", "fieldtype": "Text Editor", "label": "Other Activities/Comments (All Week)"}
+ ],
+ "is_submittable": 1,
+ "permissions": [
+  {"role": "System Manager", "read": 1, "write": 1, "create": 1, "delete": 1, "submit": 1, "cancel": 1, "amend": 1},
+  {"role": "Site Report Manager", "read": 1, "write": 1, "create": 1, "submit": 1, "cancel": 1, "amend": 1}
+ ],
+ "allow_rename": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC"
+} 
