@@ -27,6 +27,7 @@ def aggregate_site_weekly_report(site, week_start, week_end):
         fields=["name", "total_consultation", "medevac", "fatality", "fitted_and_back_to_work", "not_fit_hse", "others"],
     )
     if not daily_reports:
+        frappe.logger().info(f"No daily reports found for site {site} between {week_start} and {week_end}")
         return None
     # Aggregate fields
     total_consultation = sum(d["total_consultation"] for d in daily_reports)
@@ -41,21 +42,26 @@ def aggregate_site_weekly_report(site, week_start, week_end):
     inspection = []
     customer_complaints = []
     for d in daily_reports:
-        training_drill.extend(frappe.get_all(
+        t_rows = frappe.get_all(
             "Training",
             filters={"parent": d["name"], "parenttype": "Site daily report"},
             fields=["*"],
-        ))
-        inspection.extend(frappe.get_all(
+        )
+        i_rows = frappe.get_all(
             "Inspection",
             filters={"parent": d["name"], "parentfield": "table_dfbm", "parenttype": "Site daily report"},
             fields=["*"],
-        ))
-        customer_complaints.extend(frappe.get_all(
+        )
+        c_rows = frappe.get_all(
             "Customer complaints",
             filters={"parent": d["name"], "parenttype": "Site daily report"},
             fields=["*"],
-        ))
+        )
+        frappe.logger().info(f"Aggregating for daily report {d['name']}: Training={t_rows}, Inspection={i_rows}, CustomerComplaints={c_rows}")
+        training_drill.extend(t_rows)
+        inspection.extend(i_rows)
+        customer_complaints.extend(c_rows)
+    frappe.logger().info(f"Final aggregation for site {site}: Training={training_drill}, Inspection={inspection}, CustomerComplaints={customer_complaints}")
     return {
         "site": site,
         "week_start_date": week_start,
@@ -82,6 +88,8 @@ def generate_weekly_reports():
         # Create or update the weekly report
         doc = frappe.get_doc({"doctype": "Site Weekly Report", **data})
         doc.save(ignore_permissions=True)
+        if doc.docstatus == 0:
+            doc.submit()
 
 @frappe.whitelist()
 def generate_weekly_report_for_site_and_date(site, date):
@@ -102,11 +110,15 @@ def generate_weekly_report_for_site_and_date(site, date):
         for k, v in data.items():
             doc.set(k, v)
         doc.save(ignore_permissions=True)
+        if doc.docstatus == 0:
+            doc.submit()
         return doc.name
     else:
         doc = frappe.get_doc({"doctype": "Site Weekly Report", **data})
         doc.insert(ignore_permissions=True)
-        return doc.name 
+        if doc.docstatus == 0:
+            doc.submit()
+        return doc.name
 
 @frappe.whitelist()
 def generate_weekly_reports_for_today():
@@ -135,6 +147,10 @@ def generate_weekly_reports_for_today():
             for k, v in data.items():
                 doc.set(k, v)
             doc.save(ignore_permissions=True)
+            if doc.docstatus == 0:
+                doc.submit()
         else:
             doc = frappe.get_doc({"doctype": "Site Weekly Report", **data})
-            doc.insert(ignore_permissions=True) 
+            doc.insert(ignore_permissions=True)
+            if doc.docstatus == 0:
+                doc.submit() 
