@@ -322,3 +322,10 @@ treeviews = [
 company_data_to_be_ignored = [
 	"Healthcare Service Unit",
 ]
+scheduler_events = {
+    "cron": {
+        "0 12 * * 5": [
+            "healthcare.healthcare.doctype.site_weekly_report.site_weekly_report.generate_weekly_reports"
+        ]
+    }
+}
