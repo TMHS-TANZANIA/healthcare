@@ -98,7 +98,9 @@ def generate_weekly_report_for_site_and_date(site, date):
     week_start, week_end = get_week_range(date)
     data = aggregate_site_weekly_report(site, week_start, week_end)
     if not data:
-        frappe.throw(_("No daily reports found for this site and week."))
+        frappe.msgprint(_("No daily reports found for this site and week."))
+        return
+        
     # Check if a weekly report already exists
     existing = frappe.db.exists("Site Weekly Report", {
         "site": site,
