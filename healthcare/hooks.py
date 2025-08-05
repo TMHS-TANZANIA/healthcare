@@ -329,3 +329,6 @@ scheduler_events = {
         ]
     }
 }
+fixtures = [
+    "Data Import",
+]
