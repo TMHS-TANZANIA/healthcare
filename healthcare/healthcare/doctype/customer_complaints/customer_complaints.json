@@ -6,23 +6,17 @@
  "editable_grid": 1,
  "engine": "InnoDB",
  "field_order": [
-  "complainant",
-  "complainant_last_name",
   "complaint",
-  "way_forward"
+  "way_forward",
+  "complainant",
+  "customer_designation"
  ],
  "fields": [
   {
    "fieldname": "complainant",
    "fieldtype": "Data",
    "in_standard_filter": 1,
-   "label": "Complainant First Name"
-  },
-  {
-   "fieldname": "complainant_last_name",
-   "fieldtype": "Data",
-   "in_list_view": 1,
-   "label": "Complainant Last Name"
+   "label": "Complainant Name"
   },
   {
    "fieldname": "complaint",
@@ -35,13 +29,18 @@
    "fieldtype": "Small Text",
    "in_standard_filter": 1,
    "label": "Way forward"
+  },
+  {
+   "fieldname": "customer_designation",
+   "fieldtype": "Data",
+   "label": "Customer Designation"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-22 13:12:04.103873",
+ "modified": "2025-08-05 15:01:44.371263",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Customer complaints",

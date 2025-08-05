@@ -1,5 +1,6 @@
 {
  "actions": [],
+ "allow_import": 1,
  "allow_rename": 1,
  "autoname": "format:{code}-{topic_name}",
  "creation": "2025-07-18 16:37:55.931439",
@@ -8,6 +9,7 @@
  "engine": "InnoDB",
  "field_order": [
   "topic_name",
+  "training_type",
   "column_break_xwji",
   "code"
  ],
@@ -32,13 +34,19 @@
    "in_list_view": 1,
    "label": "Topic Name",
    "reqd": 1
+  },
+  {
+   "fieldname": "training_type",
+   "fieldtype": "Select",
+   "label": "Training type",
+   "options": "Internal Medical Training\nCME\nOHS training"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-05 13:01:44.185447",
- "modified_by": "system@tmhstz.com",
+ "modified": "2025-08-05 15:31:20.669879",
+ "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Training Topic",
  "naming_rule": "Expression",
