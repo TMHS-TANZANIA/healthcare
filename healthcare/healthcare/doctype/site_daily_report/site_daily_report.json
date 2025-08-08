@@ -13,16 +13,16 @@
   "date",
   "team_on_site",
   "section_break_gm4v",
+  "total_consultation",
   "fitted_and_back_to_work",
   "not_fit_hse",
-  "medevac",
   "column_break_cpau",
+  "medevac",
   "fatality",
-  "total_consultation",
   "section_break_ecya",
   "training_drill",
   "inspection_section",
-  "table_dfbm",
+  "inspection",
   "section_break_mdsf",
   "customer_complaints",
   "others"
@@ -75,12 +75,6 @@
   {
    "fieldname": "inspection_section",
    "fieldtype": "Section Break"
-  },
-  {
-   "fieldname": "table_dfbm",
-   "fieldtype": "Table",
-   "label": "INSPECTION",
-   "options": "Inspection"
   },
   {
    "fieldname": "section_break_mdsf",
@@ -152,13 +146,19 @@
    "in_list_view": 1,
    "label": "Total Consultation",
    "non_negative": 1
+  },
+  {
+   "fieldname": "inspection",
+   "fieldtype": "Table",
+   "label": "INSPECTION",
+   "options": "Inspection"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-05 17:01:56.322048",
+ "modified": "2025-08-08 19:03:32.783118",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Site daily report",
