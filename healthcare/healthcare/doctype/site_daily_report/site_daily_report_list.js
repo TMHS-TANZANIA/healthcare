@@ -1,4 +1,4 @@
-frappe.listview_settings['site daily report'] = {
+frappe.listview_settings['Site daily report'] = {
     onload: function(listview) {
         listview.page.add_inner_button(__('Generate Weekly Reports (All Sites)'), function() {
             frappe.call({

@@ -1,32 +1,36 @@
 {
  "actions": [],
  "allow_rename": 1,
- "autoname": "format:SWR-{####}",
- "creation": "2025-08-01 13:04:06.245897",
+ "autoname": "format:SGWR-{YYYY}-{####}",
+ "creation": "2025-08-08 18:27:46.077150",
+ "default_view": "List",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
+  "general_site_reports_details_section",
   "site",
   "week_start_date",
   "week_end_date",
+  "general_site_report_summary_section",
   "total_consultation",
-  "total_medevac",
-  "total_fatality",
   "total_fit_and_back_to_work",
   "total_not_fit_hse",
+  "column_break_acge",
+  "total_medevac",
+  "total_fatality",
+  "section_break_kzhd",
   "training_drill",
   "inspection",
   "customer_complaints",
-  "other_activities",
-  "amended_from"
+  "amended_from",
+  "other_activities"
  ],
  "fields": [
   {
    "fieldname": "site",
-   "fieldtype": "Link",
+   "fieldtype": "Small Text",
    "in_list_view": 1,
-   "label": "Site",
-   "options": "Site",
+   "label": "Sites",
    "reqd": 1
   },
   {
@@ -101,18 +105,36 @@
    "fieldtype": "Link",
    "label": "Amended From",
    "no_copy": 1,
-   "options": "Site Weekly Report",
+   "options": "Site General Weekly Report",
    "print_hide": 1,
    "read_only": 1,
    "search_index": 1
+  },
+  {
+   "fieldname": "general_site_reports_details_section",
+   "fieldtype": "Section Break",
+   "label": "General Site Reports Details"
+  },
+  {
+   "fieldname": "general_site_report_summary_section",
+   "fieldtype": "Section Break",
+   "label": "General Site Report Summary"
+  },
+  {
+   "fieldname": "column_break_acge",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_kzhd",
+   "fieldtype": "Section Break"
   }
  ],
  "is_submittable": 1,
  "links": [],
- "modified": "2025-08-05 15:07:46.668273",
- "modified_by": "system@tmhstz.com",
+ "modified": "2025-08-08 18:31:25.381334",
+ "modified_by": "Administrator",
  "module": "Healthcare",
- "name": "Site Weekly Report",
+ "name": "Site General Weekly Report",
  "naming_rule": "Expression",
  "owner": "Administrator",
  "permissions": [

@@ -43,7 +43,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Role",
-   "options": "Doctor\nParamedic\nDriver",
+   "options": "Doctor\nParamedic(Nurse)\nParamedic(Clinician)\nDriver",
    "reqd": 1
   },
   {
@@ -62,8 +62,8 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-05 13:00:58.515124",
- "modified_by": "system@tmhstz.com",
+ "modified": "2025-08-08 20:30:07.628605",
+ "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Site Personnel",
  "naming_rule": "Expression",
