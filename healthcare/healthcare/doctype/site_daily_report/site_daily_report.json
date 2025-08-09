@@ -55,7 +55,7 @@
    "fieldtype": "Int",
    "label": "Medevac",
    "non_negative": 1,
-   "read_only_depends_on": "eval: !(frappe.datetime.now_datetime() <= doc.expired_date_time)\n",
+   "read_only_depends_on": "eval: !(!doc.expired_date_time || frappe.datetime.now_datetime() <= doc.expired_date_time)\n\n",
    "reqd": 1
   },
   {
@@ -63,7 +63,7 @@
    "fieldtype": "Int",
    "label": "Fatality",
    "non_negative": 1,
-   "read_only_depends_on": "eval: !(frappe.datetime.now_datetime() <= doc.expired_date_time)\n",
+   "read_only_depends_on": "eval: !(!doc.expired_date_time || frappe.datetime.now_datetime() <= doc.expired_date_time)\n\n",
    "reqd": 1
   },
   {
@@ -75,7 +75,7 @@
    "fieldtype": "Table",
    "label": "TRAINING /DRILL",
    "options": "Training",
-   "read_only_depends_on": "eval: !(frappe.datetime.now_datetime() <= doc.expired_date_time)\n",
+   "read_only_depends_on": "eval: !(!doc.expired_date_time || frappe.datetime.now_datetime() <= doc.expired_date_time)\n\n",
    "reqd": 1
   },
   {
@@ -91,13 +91,13 @@
    "fieldtype": "Table",
    "label": "CUSTOMER COMPLAINTS",
    "options": "Customer complaints",
-   "read_only_depends_on": "eval: !(frappe.datetime.now_datetime() <= doc.expired_date_time)\n"
+   "read_only_depends_on": "eval: !(!doc.expired_date_time || frappe.datetime.now_datetime() <= doc.expired_date_time)\n\n"
   },
   {
    "fieldname": "others",
    "fieldtype": "Text Editor",
    "label": "Other Activities/Comments",
-   "read_only_depends_on": "eval: !(frappe.datetime.now_datetime() <= doc.expired_date_time)\n"
+   "read_only_depends_on": "eval: !(!doc.expired_date_time || frappe.datetime.now_datetime() <= doc.expired_date_time)\n\n"
   },
   {
    "fieldname": "site_details_section",
@@ -109,7 +109,7 @@
    "fieldtype": "Table",
    "label": "Team on site",
    "options": "Site Personnel Row",
-   "read_only_depends_on": "eval: !(frappe.datetime.now_datetime() <= doc.expired_date_time)\n",
+   "read_only_depends_on": "eval: !(!doc.expired_date_time || frappe.datetime.now_datetime() <= doc.expired_date_time)\n\n",
    "reqd": 1
   },
   {
@@ -117,14 +117,14 @@
    "fieldtype": "Data",
    "label": "Ambulance licence plate",
    "placeholder": "T 123 ABC",
-   "read_only_depends_on": "eval: !(frappe.datetime.now_datetime() <= doc.expired_date_time)\n"
+   "read_only_depends_on": "eval: !(!doc.expired_date_time || frappe.datetime.now_datetime() <= doc.expired_date_time)\n\n"
   },
   {
    "fieldname": "site_name",
    "fieldtype": "Link",
    "label": "Site Name",
    "options": "Site",
-   "read_only_depends_on": "eval: !(frappe.datetime.now_datetime() <= doc.expired_date_time)\n",
+   "read_only_depends_on": "eval: !(!doc.expired_date_time || frappe.datetime.now_datetime() <= doc.expired_date_time)\n\n",
    "reqd": 1
   },
   {
@@ -133,7 +133,7 @@
    "fieldtype": "Date",
    "in_list_view": 1,
    "label": "Date",
-   "read_only_depends_on": "eval: !(frappe.datetime.now_datetime() <= doc.expired_date_time)\n",
+   "read_only_depends_on": "eval: !(!doc.expired_date_time || frappe.datetime.now_datetime() <= doc.expired_date_time)\n\n",
    "reqd": 1
   },
   {
@@ -141,7 +141,7 @@
    "fieldtype": "Int",
    "label": "Fit and back to work",
    "non_negative": 1,
-   "read_only_depends_on": "eval: !(frappe.datetime.now_datetime() <= doc.expired_date_time)\n",
+   "read_only_depends_on": "eval: !(!doc.expired_date_time || frappe.datetime.now_datetime() <= doc.expired_date_time)\n\n",
    "reqd": 1
   },
   {
@@ -149,7 +149,7 @@
    "fieldtype": "Int",
    "label": "Unfit to work(Referred to HSE)",
    "non_negative": 1,
-   "read_only_depends_on": "eval: !(frappe.datetime.now_datetime() <= doc.expired_date_time)\n",
+   "read_only_depends_on": "eval: !(!doc.expired_date_time || frappe.datetime.now_datetime() <= doc.expired_date_time)\n\n",
    "reqd": 1
   },
   {
@@ -159,7 +159,7 @@
    "in_list_view": 1,
    "label": "Total Consultation",
    "non_negative": 1,
-   "read_only_depends_on": "eval: !(frappe.datetime.now_datetime() <= doc.expired_date_time)\n",
+   "read_only_depends_on": "eval: !(!doc.expired_date_time || frappe.datetime.now_datetime() <= doc.expired_date_time)\n\n",
    "reqd": 1
   },
   {
@@ -167,7 +167,7 @@
    "fieldtype": "Table",
    "label": "INSPECTION",
    "options": "Inspection",
-   "read_only_depends_on": "eval: !(frappe.datetime.now_datetime() <= doc.expired_date_time)\n"
+   "read_only_depends_on": "eval: !(!doc.expired_date_time || frappe.datetime.now_datetime() <= doc.expired_date_time)\n\n"
   },
   {
    "fieldname": "column_break_thor",
@@ -188,7 +188,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-09 07:13:37.592101",
+ "modified": "2025-08-09 07:38:41.597700",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Site daily report",
