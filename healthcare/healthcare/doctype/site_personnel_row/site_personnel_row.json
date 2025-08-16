@@ -15,7 +15,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Personel Name",
-   "options": "Employee",
+   "options": "Site Personnel",
    "reqd": 1
   },
   {
