@@ -15,7 +15,7 @@
    "fieldtype": "Link",
    "in_list_view": 1,
    "label": "Personel Name",
-   "options": "Site Personnel",
+   "options": "Employee",
    "reqd": 1
   },
   {
@@ -30,7 +30,7 @@
  "index_web_pages_for_search": 1,
  "istable": 1,
  "links": [],
- "modified": "2025-07-22 19:36:43.981529",
+ "modified": "2025-08-09 09:57:38.890403",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Site Personnel Row",
