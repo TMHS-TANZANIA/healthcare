@@ -16,7 +16,7 @@
  "link_to": "Site daily report",
  "link_type": "DocType",
  "links": [],
- "modified": "2025-08-19 16:28:04.580694",
+ "modified": "2025-08-19 20:05:40.177337",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Site Report User Workspace",
@@ -43,5 +43,5 @@
   }
  ],
  "title": "Site Report User Workspace",
- "type": "Link"
+ "type": "Workspace"
 }
