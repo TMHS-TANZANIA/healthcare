@@ -43,7 +43,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Role",
-   "options": "Medical Doctor\nParamedic - Clinician\nParamedic - Nurse\nDental Therapist\nLab Technologist\nRadiographer\nDriver",
+   "options": "Medical Doctor\nParamedic - Clinician\nParamedic - Nurse\nDental Therapist\nLab Technologist\nRadiographer\nPharmacist\nDriver",
    "reqd": 1
   },
   {
@@ -61,7 +61,7 @@
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-19 17:31:46.195463",
+ "modified": "2025-08-19 17:42:18.079725",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Site Personnel",
