@@ -43,7 +43,7 @@
    "fieldtype": "Select",
    "in_list_view": 1,
    "label": "Role",
-   "options": "Doctor\nParamedic(Nurse)\nParamedic(Clinician)\nDriver",
+   "options": "Medical Doctor\nParamedic - Clinician\nParamedic - Nurse\nDriver",
    "reqd": 1
   },
   {
@@ -55,14 +55,13 @@
    "fieldname": "middle_name",
    "fieldtype": "Data",
    "in_list_view": 1,
-   "label": "Middle Name",
-   "reqd": 1
+   "label": "Middle Name"
   }
  ],
  "grid_page_length": 50,
  "index_web_pages_for_search": 1,
  "links": [],
- "modified": "2025-08-08 20:30:07.628605",
+ "modified": "2025-08-19 16:06:08.421896",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Site Personnel",
@@ -90,6 +89,16 @@
    "read": 1,
    "report": 1,
    "role": "Site Report Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Site Report User",
    "share": 1,
    "write": 1
   }

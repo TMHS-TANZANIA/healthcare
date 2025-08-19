@@ -1,0 +1,22 @@
+{
+ "action": "Create Entry",
+ "action_label": "Create Daily Report",
+ "creation": "2025-08-18 10:30:04.882152",
+ "description": "This section you will learn how to submit your daily report.",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 2,
+ "intro_video_url": "/media/james/sametime/flowblade/rander/site-report-daily.mp4",
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2025-08-19 16:29:05.872745",
+ "modified_by": "Administrator",
+ "name": "create site daily report",
+ "owner": "Administrator",
+ "reference_document": "Site daily report",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Creation of the Daily Report",
+ "validate_action": 1
+}
