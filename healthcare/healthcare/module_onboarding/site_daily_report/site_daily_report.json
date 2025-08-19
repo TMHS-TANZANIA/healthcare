@@ -1,0 +1,35 @@
+{
+ "allow_roles": [
+  {
+   "role": "Site Report Manager"
+  },
+  {
+   "role": "Site Report User"
+  },
+  {
+   "role": "System Manager"
+  },
+  {
+   "role": "Administrator"
+  }
+ ],
+ "creation": "2025-08-18 10:35:09.035548",
+ "docstatus": 0,
+ "doctype": "Module Onboarding",
+ "documentation_url": "/media/james/sametime/flowblade/rander/site-report-daily.mp4",
+ "idx": 0,
+ "is_complete": 0,
+ "modified": "2025-08-19 16:29:45.547325",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Site Daily Report",
+ "owner": "Administrator",
+ "steps": [
+  {
+   "step": "create site daily report"
+  }
+ ],
+ "subtitle": "This guide will show you how you can create a daily report under one minute",
+ "success_message": "Well done, now you can send your report smmothly",
+ "title": "How to Create a Daily Report"
+}
