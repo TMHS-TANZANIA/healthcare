@@ -1,0 +1,99 @@
+{
+ "app": "healthcare",
+ "charts": [
+  {
+   "chart_name": "Daily Report Trend",
+   "label": "Daily Report Trend"
+  }
+ ],
+ "content": "[{\"id\":\"H2_SxaLND4\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Site Report Manager</span>\",\"col\":12}},{\"id\":\"T9HAsXlQ0z\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Daily Report Trend\",\"col\":12}},{\"id\":\"zt6uHcLoEk\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Reports Submitted Today\",\"col\":4}},{\"id\":\"k7Iwxrmx0d\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Reports Submitted this Week\",\"col\":4}},{\"id\":\"4uLSmC4Fi6\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Reports Submitted this Month\",\"col\":4}},{\"id\":\"LafnZDFGOT\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"l3THcCgjUb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Training Topic\",\"col\":3}},{\"id\":\"nTlPkdhELp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Site\",\"col\":3}},{\"id\":\"BZOF17OsQ7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Site daily report\",\"col\":3}},{\"id\":\"HuLhvYnr7n\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Site Personnel\",\"col\":3}},{\"id\":\"PobINXVd5H\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Site Weekly Report\",\"col\":3}},{\"id\":\"-ehBAvbWji\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Site General Weekly Report\",\"col\":3}}]",
+ "creation": "2025-08-20 12:45:43.623927",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "permission",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Site Report Manager",
+ "link_type": "DocType",
+ "links": [],
+ "modified": "2025-08-20 14:47:00.129838",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Site Report Manager",
+ "number_cards": [
+  {
+   "label": "Reports Submitted Today",
+   "number_card_name": "Reports Submitted Today"
+  },
+  {
+   "label": "Reports Submitted this Week",
+   "number_card_name": "Reports Submitted this Week"
+  },
+  {
+   "label": "Reports Submitted this Month",
+   "number_card_name": "Reports Submitted this Month"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 26.0,
+ "shortcuts": [
+  {
+   "color": "Green",
+   "doc_view": "List",
+   "label": "Training Topic",
+   "link_to": "Training Topic",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Red",
+   "doc_view": "List",
+   "label": "Site",
+   "link_to": "Site",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Orange",
+   "doc_view": "List",
+   "label": "Site daily report",
+   "link_to": "Site daily report",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Pink",
+   "doc_view": "List",
+   "label": "Site Personnel",
+   "link_to": "Site Personnel",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Yellow",
+   "doc_view": "List",
+   "label": "Site Weekly Report",
+   "link_to": "Site Weekly Report",
+   "stats_filter": "[]",
+   "type": "DocType"
+  },
+  {
+   "color": "Blue",
+   "doc_view": "List",
+   "label": "Site General Weekly Report",
+   "link_to": "Site General Weekly Report",
+   "stats_filter": "[]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Site Report Manager",
+ "type": "Workspace"
+}
