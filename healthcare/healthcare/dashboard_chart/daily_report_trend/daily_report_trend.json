@@ -1,0 +1,38 @@
+{
+ "based_on": "date",
+ "chart_name": "Daily Report Trend",
+ "chart_type": "Count",
+ "creation": "2025-08-20 12:47:28.247191",
+ "currency": "TZS",
+ "docstatus": 0,
+ "doctype": "Dashboard Chart",
+ "document_type": "Site daily report",
+ "dynamic_filters_json": "[]",
+ "filters_json": "[]",
+ "group_by_type": "Count",
+ "idx": 1,
+ "is_public": 0,
+ "is_standard": 1,
+ "last_synced_on": "2025-08-20 15:14:11.915977",
+ "modified": "2025-08-20 15:14:48.088762",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Daily Report Trend",
+ "number_of_groups": 0,
+ "owner": "Administrator",
+ "parent_document_type": "",
+ "roles": [
+  {
+   "role": "Site Report Manager"
+  }
+ ],
+ "show_values_over_chart": 1,
+ "source": "",
+ "time_interval": "Weekly",
+ "timeseries": 1,
+ "timespan": "Last Month",
+ "type": "Bar",
+ "use_report_chart": 0,
+ "value_based_on": "",
+ "y_axis": []
+}
