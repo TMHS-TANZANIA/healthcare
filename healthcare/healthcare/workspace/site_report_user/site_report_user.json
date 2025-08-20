@@ -1,0 +1,47 @@
+{
+ "app": "healthcare",
+ "charts": [],
+ "content": "[{\"id\":\"tPjeKvmMrQ\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Site Report</span>\",\"col\":12}},{\"id\":\"_iW_JqHQMJ\",\"type\":\"onboarding\",\"data\":{\"onboarding_name\":\"Site Daily Report\",\"col\":12}},{\"id\":\"ZNxXdyBPnC\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Daily Report\",\"col\":3}},{\"id\":\"Fb4EWPXaNq\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Total Report sent this week\",\"col\":4}}]",
+ "creation": "2025-07-18 16:17:49.100604",
+ "custom_blocks": [],
+ "docstatus": 0,
+ "doctype": "Workspace",
+ "for_user": "",
+ "hide_custom": 0,
+ "icon": "notebook-text",
+ "idx": 0,
+ "indicator_color": "green",
+ "is_hidden": 0,
+ "label": "Site Report User",
+ "link_to": "Site daily report",
+ "link_type": "DocType",
+ "links": [],
+ "modified": "2025-08-20 15:47:40.957917",
+ "modified_by": "Administrator",
+ "module": "Healthcare",
+ "name": "Site Report User",
+ "number_cards": [
+  {
+   "label": "Total Report sent this week",
+   "number_card_name": "Total Report this Week"
+  }
+ ],
+ "owner": "Administrator",
+ "parent_page": "",
+ "public": 1,
+ "quick_lists": [],
+ "roles": [],
+ "sequence_id": 23.0,
+ "shortcuts": [
+  {
+   "color": "Grey",
+   "doc_view": "List",
+   "label": "Daily Report",
+   "link_to": "Site daily report",
+   "stats_filter": "[[\"Site daily report\",\"owner\",\"=\",\"{frappe.session.user}\",false]]",
+   "type": "DocType"
+  }
+ ],
+ "title": "Site Report User",
+ "type": "Workspace"
+}

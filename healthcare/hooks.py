@@ -330,10 +330,4 @@ scheduler_events = {
     }
 }
 fixtures = [
-    {
-        "dt": "Workspace",
-        "filters": [
-            ["name", "=", "Site Report Manager Workspace"]
-        ]
-    }
 ]
