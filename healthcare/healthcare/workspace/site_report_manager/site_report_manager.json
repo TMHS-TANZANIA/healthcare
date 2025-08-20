@@ -6,7 +6,7 @@
    "label": "Daily Report Trend"
   }
  ],
- "content": "[{\"id\":\"H2_SxaLND4\",\"type\":\"header\",\"data\":{\"text\":\"<span class=\\\"h4\\\">Site Report Manager</span>\",\"col\":12}},{\"id\":\"T9HAsXlQ0z\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Daily Report Trend\",\"col\":12}},{\"id\":\"zt6uHcLoEk\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Reports Submitted Today\",\"col\":4}},{\"id\":\"k7Iwxrmx0d\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Reports Submitted this Week\",\"col\":4}},{\"id\":\"4uLSmC4Fi6\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Reports Submitted this Month\",\"col\":4}},{\"id\":\"LafnZDFGOT\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"l3THcCgjUb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Training Topic\",\"col\":3}},{\"id\":\"nTlPkdhELp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Site\",\"col\":3}},{\"id\":\"BZOF17OsQ7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Site daily report\",\"col\":3}},{\"id\":\"HuLhvYnr7n\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Site Personnel\",\"col\":3}},{\"id\":\"PobINXVd5H\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Site Weekly Report\",\"col\":3}},{\"id\":\"-ehBAvbWji\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Site General Weekly Report\",\"col\":3}}]",
+ "content": "[{\"id\":\"nVgk3MxJq-\",\"type\":\"onboarding\",\"data\":{\"onboarding_name\":\"Training Topic\",\"col\":12}},{\"id\":\"T9HAsXlQ0z\",\"type\":\"chart\",\"data\":{\"chart_name\":\"Daily Report Trend\",\"col\":12}},{\"id\":\"zt6uHcLoEk\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Reports Submitted Today\",\"col\":4}},{\"id\":\"k7Iwxrmx0d\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Reports Submitted this Week\",\"col\":4}},{\"id\":\"4uLSmC4Fi6\",\"type\":\"number_card\",\"data\":{\"number_card_name\":\"Reports Submitted this Month\",\"col\":4}},{\"id\":\"LafnZDFGOT\",\"type\":\"spacer\",\"data\":{\"col\":12}},{\"id\":\"l3THcCgjUb\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Training Topic\",\"col\":3}},{\"id\":\"nTlPkdhELp\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Site\",\"col\":3}},{\"id\":\"BZOF17OsQ7\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Site daily report\",\"col\":3}},{\"id\":\"HuLhvYnr7n\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Site Personnel\",\"col\":3}},{\"id\":\"PobINXVd5H\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Site Weekly Report\",\"col\":3}},{\"id\":\"-ehBAvbWji\",\"type\":\"shortcut\",\"data\":{\"shortcut_name\":\"Site General Weekly Report\",\"col\":3}}]",
  "creation": "2025-08-20 12:45:43.623927",
  "custom_blocks": [],
  "docstatus": 0,
@@ -20,7 +20,7 @@
  "label": "Site Report Manager",
  "link_type": "DocType",
  "links": [],
- "modified": "2025-08-20 15:19:41.314856",
+ "modified": "2025-08-20 18:20:54.391148",
  "modified_by": "Administrator",
  "module": "Healthcare",
  "name": "Site Report Manager",

@@ -1,0 +1,22 @@
+{
+ "action": "Create Entry",
+ "action_label": "Create site",
+ "creation": "2025-08-20 17:38:29.937139",
+ "description": "Here in this video explains the steps in which the manager will take to create or edit sites",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "intro_video_url": "https://www.youtube.com/watch?v=hMeyeKzSSZY",
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2025-08-20 17:38:29.937139",
+ "modified_by": "Administrator",
+ "name": "Create site",
+ "owner": "Administrator",
+ "reference_document": "Site",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Create site",
+ "validate_action": 1
+}

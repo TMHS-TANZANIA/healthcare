@@ -1,0 +1,22 @@
+{
+ "action": "Create Entry",
+ "action_label": "Generate weekly reports",
+ "creation": "2025-08-20 18:01:36.353144",
+ "description": "This tutorial show the generation of the site weekly reportsfor all sites by just a click of a button",
+ "docstatus": 0,
+ "doctype": "Onboarding Step",
+ "idx": 0,
+ "intro_video_url": "https://www.youtube.com/watch?v=P6vdrwv5k_k",
+ "is_complete": 0,
+ "is_single": 0,
+ "is_skipped": 0,
+ "modified": "2025-08-20 18:01:47.170927",
+ "modified_by": "Administrator",
+ "name": "Generate the weekly report for all sites individually at once",
+ "owner": "Administrator",
+ "reference_document": "Site Weekly Report",
+ "show_form_tour": 0,
+ "show_full_form": 0,
+ "title": "Generate the weekly report for all sites individually at once",
+ "validate_action": 1
+}
